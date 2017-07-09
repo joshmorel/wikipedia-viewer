@@ -1,0 +1,15 @@
+:root {
+  --primary-color: #1E90FF;
+  --primary-dark: #0063cb;
+  --primary-light: #6fc0ff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+}
+
+body {
+  background-color: var(--primary-color);
+}
