@@ -32,6 +32,7 @@ main > * {
 
 a {
   color: black;
+  /*text-decoration: none;*/
 }
 
 a:visited {
@@ -43,17 +44,29 @@ a:visited {
   display: flex;
   -webkit-flex-direction: column;
   flex-direction: column;
-  width: 60vw;
-  margin: 0 20vw;
+  width: 80vw;
+  margin: 0 10vw;
+}
+
+/* Desktops and tables in landscape */
+@media screen and (min-width: 768px) and (orientation: landscape){
+  .result-list {
+    width: 60vw;
+    margin: 0 20vw;
+  }
 }
 
 .result-item {
   border: 1px outset var(--primary-dark);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+
   background: white;
   -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.4);
   -moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.4);
   margin: 2px 4px;
-  padding: 4px;
+  padding: 6px;
 
   -webkit-animation-duration: 1s;
   -moz-animation-duration: 1s;
@@ -66,6 +79,14 @@ a:visited {
   -webkit-animation-name: fadeIn;
   -moz-animation-name: fadeIn;
   animation-name: fadeIn;
+}
+
+.result-item > a {
+  text-decoration: none;
+}
+
+.result-item:hover {
+  background-color: var(--primary-light);
 }
 
 @-webkit-keyframes fadeIn {

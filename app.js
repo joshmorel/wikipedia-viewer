@@ -48,7 +48,8 @@ const wikipediaViewer =
       function appendResultItem(title,description,link) {
         const resultItem = document.createElement("div");
         resultItem.setAttribute('class','result-item');
-        resultItem.innerHTML = `<div class="title"><a href="${link}" target="_blank" rel ="noopener noreferrer">${title}</a></div><div class="description">${description}</div>`;
+        resultItem.innerHTML = `<a href="${link}" target="_blank" rel ="noopener noreferrer"><div class="title">${title}</div><div class="description">${description}</div></a>`;
+
         resultList.appendChild(resultItem);
       }
 
