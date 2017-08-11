@@ -1,4 +1,3 @@
-// Example API w origin=*: /w/api.php?action=query&format=json&maxlag=4000&origin=*&prop=revisions&titles=Main+Page&rvprop=content
 
 const wikipediaViewer =
   (function IIFE(document) {
